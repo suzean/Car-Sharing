@@ -92,18 +92,52 @@ ul li {
     padding: 0 140px;
     line-height: 15px;
 }
+.buttons {
+    display: flex;
+    padding-top: 60px;
+}
+.buttons button {
+    width: 226px;
+    height: 66px;
+    margin: 0 5px;
+    border-radius: 40px;
+    border: none;
+}
+.buttons .first {
+    background-color: #FF0000;
+    color:#FFFFFF;
+    box-shadow: 0px 3px 6px #FF00004D;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+.buttons .second {
+    background-color: #FFFFFF;
+    color: #FF0000;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    text-transform: uppercase;
+}
 
 main {
     /* width: 1366px; */
     height: 1968px;
-
-    background-color: aquamarine;
 }
 .blog {
     height: 656px;
+    background-color: #FFFFFF;
 }
 .blog h2 {
     text-align: center;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 700;
+    font-size: 35px;
+    color:#000000;
+    text-transform: uppercase;
+    margin-top: 70px;
+    margin-bottom: 40px;
 }
 main .container1 {
     width: 1088px;
@@ -114,6 +148,32 @@ main .container1 {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+.blog__content h3 {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 19px;
+    color:#6A6A6A;
+    margin: 20px 0;
+}
+.blog__content p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    color:#6A6A6A;
+    line-height: 20px;
+}
+.blog__content button {
+    width: 142px;
+    height: 40px;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 700;
+    border: none;
+    background-color: #FF0000;
+    box-shadow: 0px 3px 6px #FF00004D;
+    border-radius: 40px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    margin-top: 15px;
+
 }
 .box1 {
     width: 352px;
@@ -126,6 +186,7 @@ main .container1 {
     height: 234px;
     background-image: url(../images/photo1.png);
 }
+
 .box2 {
     width: 352px;
     height: 434px;
@@ -150,38 +211,95 @@ main .container1 {
 }
 .service {
     height: 656px;
+    background-color: #28272C;
 }
 .service h2 {
     text-align: center;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 700;
+    font-size: 35px;
+    color:#FFFFFF;
+    text-transform: uppercase;
+    padding-top: 70px;
+    margin-bottom: 40px;
 }
-.service__content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.service__content h3 {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 19px;
+    color:#FFFFFF;
+    margin: 20px 0;
+    text-align: center;
+}
+.service__content p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    color:#B2B2B2;
+    line-height: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.service__content button {
+    width: 142px;
+    height: 40px;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 700;
+    border: none;
+    background-color: #FF0000;
+    box-shadow: 0px 3px 6px #FF00004D;
+    border-radius: 40px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    margin-top: 15px auto;
+}
+ .service__content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
 }
 .card1{
     width: 231px;
     height: 361px;
-    background-color: chocolate;
+}
+.card1__img {
+    width: 170px;
+    height: 170px;
+    margin: 0 auto;
+    background-image: url(../images/mini1.png);
 }
 .card2 {
     width: 231px;
     height: 361px;
-    background-color: chocolate;
 }
-.card3{
+.card2__img {
+    width: 170px;
+    height: 170px;
+    margin: 0 auto;
+    background-image: url(../images/mini2.png);
+}
+.card3 {
     width: 231px;
     height: 361px;
-    background-color: chocolate;
+}
+.card3__img {
+    width: 170px;
+    height: 170px;
+    margin: 0 auto;
+    background-image: url(../images/mini3.png);
 }
 .card4 {
     width: 231px;
     height: 361px;
-    background-color: chocolate;
+}
+.card4__img {
+    width: 170px;
+    height: 170px;
+    margin: 0 auto;
+    background-image: url(../images/mini4.png);
 }
 
 .contact {
     height: 656px;
+    background-color:#FFFFFF ;
 }
 .contact h2 {
     text-align: center;
@@ -194,12 +312,14 @@ main .container1 {
 .area1 {
     width: 444px;
     height: 317px;
-    background-color: cornflowerblue;
+    background-image: url(../images/Form\ Photo.png);
 }
 .area2 {
     width: 444px;
     height: 317px;
-    background-color: rebeccapurple
+    display: flex;
+    flex-direction: column;
+
 }
 footer {
     /* width: 1366px; */
