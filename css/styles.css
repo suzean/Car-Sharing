@@ -4,15 +4,27 @@
 
 /* font-family: 'Nunito Sans', sans-serif; */
 /* font-family: 'Open Sans', sans-serif; */
-
+body {
+    width: 100vw;
+}
 header {
     /* width: 1366px; */
-    width: 100vw;
+    /* width: 100vw; */
     height: 807px;
 
     background-image: url(../images/Image.png);
     background-repeat: no-repeat;
     background-size: cover;
+    position: relative;
+    
+}
+header::before {
+    content: "";
+    display: block;
+    height: 807px;
+    width: 100%;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5); 
 }
 menu {
     height: 90px;
@@ -30,6 +42,8 @@ menu .container {
     color: #FFFFFF;
     font-family: 'Nunito Sans', sans-serif;
     font-weight: bold;
+    position: relative;
+    z-index: 2;
     
 }
 .logo {
@@ -69,12 +83,20 @@ ul li {
     text-align: center;
     line-height: 90px;
 }
+nav ul li:hover {
+    display: block;
+    width: 128px;
+    height: 90px;
+    background-color:rgba(255, 255, 255, 0.1);
+}
 .description {
     height: 717px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    position: relative;
+    z-index: 2;
 }
 .description h1 {
     font-family: 'Nunito Sans', sans-serif;
@@ -357,29 +379,55 @@ main .container1 {
     
 } 
 input[type="text"] {
-    margin: 10px;
+    margin: 8px;
     border-radius: 5px;
     border: 1px solid #D1D1D1;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: lighter;
+    font-size: 16px;
+    padding: 5px;
 }
 input[type="email"] {
-    margin: 10px;
+    margin: 8px;
     border-radius: 5px;
     border: 1px solid #D1D1D1;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: lighter;
+    font-size: 16px;
+    padding: 5px;
 }
 textarea {
-    margin: 10px;
+    margin: 8px;
     border-radius: 5px;
     border: 1px solid #D1D1D1;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: lighter;
+    font-size: 16px;
+    padding: 5px;
 }
 label {
     margin: 10px;
     font-size: 10px;
     font-family: 'Open Sans', sans-serif;
+    display: inline-block;
+}
+label div {
+    margin-left: 15px;
+    font-size: 10px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: lighter;
+}
+input[type="checkbox"] {
+    float: left;
 }
 .area2 button {
     margin: 0 5px 0 320px;
-    border-radius: 50px;
+    border-radius: 40px;
     padding: 5px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 3px 6px #FF00004D;
+    border: 1px solid #FF0000;
+    color: #FF0000;
 }
 input[type="text"]:focus,
 input[type="email"]:focus,
@@ -392,5 +440,49 @@ footer {
     /* width: 1366px; */
     height: 233px;
 
-    background-color: blueviolet;
+    background-color: #28272C;
+}
+footer .logo_footer {
+    width: 281px;
+    height: 100%;
+    font-size: 25px;
+    line-height: 90px;
+    text-transform: uppercase;
+    letter-spacing: 0px;
+    display: flex;
+  
+}
+.logo_footer span {
+    color:#FF0000;
+}
+footer .container  {
+    width: 1088px;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: bold;
+}
+footer .logo__img {
+    display: block;
+    width: 31px;
+    height: 35px;
+    background-image: url(../images/Icon.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: 0;
+    margin-top: 25px;
+}
+.container .menu_footer {
+    display: inline-block;
+    line-height: 10px;
+    font-size: 14px;
+}
+footer .menu_footer ul li {
+    padding: 5px;
+}
+.menu_footer ul li:hover {
+    color: #FF0000;
 }
